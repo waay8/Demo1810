@@ -1,0 +1,61 @@
+body {
+  font-size: 12px;
+  font-family: arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: red;
+}
+
+#header {
+  width: 960px;
+  margin: 0 auto;
+  height: 80px;
+}
+
+#nav {
+  width: 960px;
+  margin: 0 auto;
+  height: 50px;
+}
+#nav ul {
+  margin-left: 100px;
+}
+#nav ul li {
+  list-style: none;
+  padding: 0  10px;
+}
+#nav ul li a {
+  color: red;
+}
+#nav ul li a:hover {
+  color: black;
+}
+
+.public {
+  width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  color: blue;
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "public.scss";
+
+
+
+$color : red;
+li{
+    color: $color;
+}
+
+//使用@mixin定义一个代码段 没有参数
+@mixin common{
+    width: 960px;
+    margin: 0 auto;
+}
+@mixin common2($h:80px,$w:960px){
+    width: $w;
+    margin: 0 auto;
+    height: $h;
+}
+#header{
+    @include common2;
+}
+
+
+#nav{
+     @include common;
+    height: 50px;
+    ul{
+        margin-left: 100px;
+        li{
+            list-style: none;
+            padding: 0  10px;
+            a{
+                color: $color;
+                &:hover{
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
+//定义一个类
+.public{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+
+$flag : false;  
+@if $flag {
+    p {color :red; }
+} @else{
+    p {color :blue; }
+}
+
+
+
+
+@for $i from 1 through 3 {
+  .item-#{$i } { width: 2em * $i ; }    
+}
